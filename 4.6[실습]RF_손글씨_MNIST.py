@@ -10,12 +10,15 @@ from sklearn import tree
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
 
 mnist = datasets.load_digits()
+
+print(mnist)
+
 features, labels = mnist.data, mnist.target
 
 def cross_validation(classifier,features, labels):
