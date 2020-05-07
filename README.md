@@ -5,7 +5,6 @@
 https://www.anaconda.com/distribution/#download-section
 
 2. conda update 수행
-
  conda update conda
  conda update anaconda
  conda update python
