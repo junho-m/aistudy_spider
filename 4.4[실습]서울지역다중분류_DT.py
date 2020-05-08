@@ -90,10 +90,12 @@ print(" 데이터 시각화 ")
 print("=========================================================")
 
 import matplotlib.pyplot as plt
-import seaborn as sns
+import seaborn as sns #%matplotlib inline
 
-from IPython import get_ipython
-get_ipython().run_line_magic('matplotlib', 'inline')
+# from IPython import get_ipython
+# get_ipython().run_line_magic('matplotlib', 'inline')
+
+
 
 #경도 위도 데이터 시각화
 sns.lmplot('longitude', 'latitude', data=train_df, fit_reg=False,
