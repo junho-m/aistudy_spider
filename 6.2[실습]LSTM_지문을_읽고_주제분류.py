@@ -130,8 +130,7 @@ dense_layer = tf.layers.dense(state.h, 32)
 logits = tf.layers.dense(dense_layer, 2)
 # loss function
 cross_entropy = \
-    tf.nn.softmax_cross_entropy_with_logits_v2(
-    labels=y, logits=logits)
+    tf.nn.softmax_cross_entropy_with_logits(labels=y, logits=logits)
 loss = tf.reduce_mean(cross_entropy)
 # Adam Optimizor
 optimizer = \

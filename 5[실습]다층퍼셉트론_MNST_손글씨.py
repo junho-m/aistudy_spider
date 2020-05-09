@@ -97,8 +97,7 @@ def mlp(x):
 logits = mlp(x)
 
 
-loss_op = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(
-    logits=logits, labels=y))
+loss_op = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=y))
 
 
 train_op = tf.train.AdamOptimizer(learning_rate=0.01).minimize(loss_op)

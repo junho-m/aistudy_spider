@@ -69,6 +69,7 @@ X, Y = get_AND_data()
 
 W = tf.Variable(tf.random_normal([3, 1]))
 
+
 def step(x):
     return tf.to_float(tf.greater(x, 0))
 
